@@ -101,3 +101,63 @@ li.last {
   width: 100%;
   height: 100%;
 }
+
+// The browser window is split into 12 columns
+// Pass the number of columns a grid item should span
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items {
+  $small-screen: em(320) !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(960) !default;
+  $xlarge-screen: em(1440) !default;
+  $grid-item-background: $medium-gray;
+  $grid-item-columns: 12;
+  $grid-item-columns-big: 6;
+
+  @include clearfix;
+
+  @include media($small-screen) {
+    margin: 4em 5%;
+  }
+  @include media($medium-screen) {
+    margin: 4em 10%;
+  }
+  @include media($large-screen) {
+    margin: 4em 20%;
+  }
+  @include media($xlarge-screen) {
+    margin: 4em 20%;
+  }
+
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    float: left;
+    overflow: hidden;
+    outline: none;
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 4em;
+    border: none;
+
+    &:focus,
+    &:hover {
+      background-color: lighten($grid-item-background, 50%);
+    }
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    @include media($xlarge-screen) {
+      @include grid-item-columns($grid-item-columns-big);
+      border-right: 1em solid #000;
+      border-left: 1em solid #000;
+    }
+
+  }
+
+}
