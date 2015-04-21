@@ -19,9 +19,22 @@ configure :build do
   activate :relative_assets
 end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method = :git
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method = :rsync
+    deploy.user = data.config.deploy_user
+    deploy.host = data.config.deploy_host
+    deploy.path = data.config.deploy_path
+    deploy.clean = true
+    deploy.port = data.config.deploy_port
+  end
+else
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method = :git
+  end
 end
 
 helpers do
