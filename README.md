@@ -2,7 +2,7 @@
 
 ## About this site
 
-The [launch page](http://milkfarm.github.io/epicpress/) is built with Middleman. Middleman is a static site generator
+This [launch page](http://milkfarm.github.io/epicpress/) is built with Middleman. Middleman is a static site generator
 developed by thoughbot, inc.
 
 ## Credits

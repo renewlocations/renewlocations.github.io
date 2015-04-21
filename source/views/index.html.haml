@@ -2,10 +2,19 @@
 title: Page Title
 ---
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+#wrap
+  #logo
+    = image_tag 'logo.png', alt: data.config.company_name
+
+  #content
+    %ul
+      %li Young Adult
+      %li Hardcover &amp; eBook
+      %li.last 8 6-book Series
+
+    = form_tag 'http://marketing.milkfarmproductions.com/t/r/s/iitljjd/', id: 'campaign' do
+      %p Launching Fall 2015
+      %input#fieldEmail{ name: "cm-iitljjd-iitljjd", type: "email", placeholder: "Your Email Address" }
+      %button.ghost{ type: "submit" } Notify Me
+
+  #footer
