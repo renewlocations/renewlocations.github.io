@@ -709,19 +709,10 @@ form p {
   margin-bottom: 5em; }
 
 /* line 71, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
-#footer ul, ul.social {
-  font-size: 1.5em;
-  margin-top: 50px; }
-
-/* line 75, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
-#footer ul li, ul.social li {
-  border: none; }
-
-/* line 78, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
 ul {
   list-style: none; }
 
-/* line 81, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
+/* line 74, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
 li {
   letter-spacing: 0.1em;
   border-right: 1px solid #666;
@@ -731,10 +722,18 @@ li {
   margin-right: 10px;
   padding-right: 13px; }
 
-/* line 90, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
+/* line 83, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
 li.last {
   border: none;
   margin-right: 0; }
+
+/* line 87, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
+ul.social {
+  font-size: 1.5em;
+  margin-top: 50px; }
+  /* line 90, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
+  ul.social li {
+    border: none; }
 
 /* line 96, /Users/tim/Sites/epicpress/source/assets/stylesheets/_global.css.scss */
 .video {
