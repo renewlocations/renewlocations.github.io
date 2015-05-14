@@ -67,8 +67,13 @@ form p {
 #footer {
   text-align: center;
   margin-bottom: 5em;
-  font-size: 1.6em;
-  ul li { border:none; }
+}
+#footer ul, ul.social {
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+#footer ul li, ul.social li {
+  border:none;
 }
 ul {
   list-style: none;
