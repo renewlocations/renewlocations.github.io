@@ -68,13 +68,6 @@ form p {
   text-align: center;
   margin-bottom: 5em;
 }
-#footer ul, ul.social {
-  font-size: 1.5em;
-  margin-top: 50px;
-}
-#footer ul li, ul.social li {
-  border:none;
-}
 ul {
   list-style: none;
 }
@@ -90,6 +83,13 @@ li {
 li.last {
   border: none;
   margin-right: 0;
+}
+ul.social {
+  font-size: 1.5em;
+  margin-top: 50px;
+  li {
+    border:none;
+  }
 }
 
 // HTML5

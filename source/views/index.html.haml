@@ -17,16 +17,7 @@ title: Launching Fall 2015
       %input#fieldEmail{ name: "cm-iitljjd-iitljjd", type: "email", placeholder: "Your Email Address" }
       %button.ghost{ type: "submit" } Notify Me
 
-    %ul.social
-      %li
-        = link_to 'https://instagram.com' do
-          %i{class: 'fa fa-instagram'}
-      %li
-        = link_to 'https://twitter.com/EPICPressYA' do
-          %i{class: 'fa fa-twitter'}
-      %li
-        = link_to 'https://www.facebook.com/EPICPressYA' do
-          %i{class: 'fa fa-facebook'}
+    = partial 'partials/social'
 
     .grid-items
       .grid-item
